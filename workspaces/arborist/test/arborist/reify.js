@@ -3689,7 +3689,7 @@ t.test('should preserve exact ranges, missing actual tree', async (t) => {
   })
 })
 
-t.test('install stategy linked', async (t) => {
+t.test('install strategy linked', async (t) => {
   const Arborist = require('../../lib/index.js')
   const abbrev = resolve(__dirname,
     '../fixtures/registry-mocks/content/abbrev/-/abbrev-1.1.1.tgz')
