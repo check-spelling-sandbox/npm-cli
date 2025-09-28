@@ -462,7 +462,7 @@ const definitions = {
   depth: new Definition('depth', {
     default: null,
     defaultDescription: `
-      \`Infinity\` if \`--all\` is set, otherwise \`0\`
+      \`Infinity\` if \`--all\` is set; otherwise, \`0\`
     `,
     type: [null, Number],
     description: `
@@ -1205,7 +1205,7 @@ const definitions = {
     default: null,
     type: [null, 1, 2, 3, '1', '2', '3'],
     defaultDescription: `
-      Version 3 if no lockfile, auto-converting v1 lockfiles to v3, otherwise
+      Version 3 if no lockfile, auto-converting v1 lockfiles to v3; otherwise,
       maintain current lockfile version.`,
     description: `
       Set the lockfile format version to be used in package-lock.json and

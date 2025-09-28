@@ -405,7 +405,7 @@ are same as \`cpu\` field of package.json, which comes from \`process.arch\`.
 
 #### \`depth\`
 
-* Default: \`Infinity\` if \`--all\` is set, otherwise \`0\`
+* Default: \`Infinity\` if \`--all\` is set; otherwise, \`0\`
 * Type: null or Number
 
 The depth to go when recursing packages for \`npm ls\`.
@@ -1129,7 +1129,7 @@ allow the CLI to fill in missing cache data, see \`--prefer-offline\`.
 #### \`omit\`
 
 * Default: 'dev' if the \`NODE_ENV\` environment variable is set to
-  'production', otherwise empty.
+  'production'; otherwise, empty.
 * Type: "dev", "optional", or "peer" (can be set multiple times)
 
 Dependency types to omit from the installation tree on disk.
