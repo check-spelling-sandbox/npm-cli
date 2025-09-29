@@ -199,7 +199,7 @@ t.test('packageLockOnly can add deps', async t => {
   t.throws(() => fs.statSync(path + '/node_modules'), { code: 'ENOENT' })
 })
 
-t.test('malformed package.json should not be overwitten', async t => {
+t.test('malformed package.json should not be overwritten', async t => {
   t.plan(2)
 
   const path = fixture(t, 'malformed-json')
@@ -1193,7 +1193,7 @@ t.test('scoped registries', async t => {
   const path = t.testdir()
 
   // TODO
-  // this is a very artifical test that is setting a lot of internal things
+  // this is a very artificial test that is setting a lot of internal things
   // up so that we assert that the intended behavior of sending right
   // resolved data for pacote.extract is working as intended, alternatively
   // we might prefer to replace this with a proper parallel alternative
@@ -2467,9 +2467,9 @@ t.test('move aside symlink clutter', async t => {
   // check to see if we're on a case-insensitive fs
   try {
     const st = fs.lstatSync(path + '/node_modules/abbrev')
-    t.equal(st.isSymbolicLink(), true, 'fs is case insensitive')
+    t.equal(st.isSymbolicLink(), true, 'fs is case-insensitive')
   } catch (er) {
-    t.plan(0, 'case sensitive file system, test not relevant')
+    t.plan(0, 'case-sensitive file system, test not relevant')
     return
   }
 
@@ -3665,7 +3665,7 @@ t.test('should preserve exact ranges, missing actual tree', async (t) => {
       },
     })
 
-    // Set up the registrywith an http protocol
+    // Set up the registry with an http protocol
     const registryHost = 'http://registry.example.com'
     const registryPath = '/custom/deep/path/registry'
     const registry = `${registryHost}${registryPath}`
@@ -3689,7 +3689,7 @@ t.test('should preserve exact ranges, missing actual tree', async (t) => {
   })
 })
 
-t.test('install stategy linked', async (t) => {
+t.test('install strategy linked', async (t) => {
   const Arborist = require('../../lib/index.js')
   const abbrev = resolve(__dirname,
     '../fixtures/registry-mocks/content/abbrev/-/abbrev-1.1.1.tgz')
